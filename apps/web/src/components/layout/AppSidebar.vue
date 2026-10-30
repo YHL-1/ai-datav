@@ -115,7 +115,7 @@ defineExpose({ openAiConfig, refreshRecent })
     <div class="workspace-account" @click.stop>
       <button class="workspace-switch" :class="{ 'is-open': accountOpen }" type="button" title="账户与工作台"
         @click="accountOpen = !accountOpen">
-        <span class="workspace-avatar">{{ initial }}</span>
+        <span class="workspace-avatar"></span>
         <span class="workspace-meta">
           <span class="workspace-name">{{ displayName }}</span>
           <span class="workspace-plan">个人工作台 · FREE</span>
@@ -181,7 +181,7 @@ defineExpose({ openAiConfig, refreshRecent })
             <Icon name="sparkles" :size="14" /> AI 能力
           </span>
           <span class="ai-state" :class="{ 'is-on': hasAiKey }"><span class="dot" />{{ hasAiKey ? '已配置' : '未配置'
-          }}</span>
+            }}</span>
         </div>
         <div class="ai-key-value">{{ maskedAiKey }}</div>
         <div class="ai-card-foot">配置硅基流动 API Key 后即可使用 AI 生成与改写大屏</div>
