@@ -1,0 +1,16 @@
+{
+  "name": "nexa",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev:web": "pnpm --filter @nexa/web dev",
+    "dev:api": "pnpm --filter @nexa/api dev",
+    "build": "pnpm --filter @nexa/web build",
+    "typecheck": "pnpm -r typecheck"
+  }
+}

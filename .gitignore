@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.local
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.trae/
+.chrome-profile/
+.tmp/
+apps/api/uploads/
+ui/screens/_test-*.png
+ui/screens/_vue-*.png
